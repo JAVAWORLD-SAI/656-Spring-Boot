@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="BootProj1-DependencyInjection"/>
-<aop-project name="BootProj2-DependencyInjection"/>
+<aop-project name="BootProj9-DataJpa-CrudRepository"/>
 </aop-reference-model>

@@ -6,16 +6,16 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="UiCourseMaterial"/>
+		<item key="selection" value="DotNetCourseMaterial"/>
 		<list key="findhistory">
-			<item value="DotNetCourseMaterial"/>
-			<item value="JavaCourseMaterial"/>
 			<item value="UiCourseMaterial"/>
+			<item value="JavaCourseMaterial"/>
+			<item value="DotNetCourseMaterial"/>
 			<item value=""/>
 		</list>
 		<list key="replacehistory">
-			<item value="UiCourseMaterial"/>
 			<item value="DotNetCourseMaterial"/>
+			<item value="UiCourseMaterial"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
