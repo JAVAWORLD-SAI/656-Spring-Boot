@@ -1,6 +1,7 @@
 package com.example.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component("std")
@@ -10,6 +11,7 @@ public class Student {
 		System.out.println("Student.0 param constructor");
 	}
 	@Autowired
+	@Qualifier("Ui")
 	private  IcouseMaterial material;
 	
 	public void preparation (String examName)

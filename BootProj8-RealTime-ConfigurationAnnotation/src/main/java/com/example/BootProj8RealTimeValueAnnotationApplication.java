@@ -16,5 +16,4 @@ public class BootProj8RealTimeValueAnnotationApplication {
 	 		System.out.println("Bill Data  "+ Bill);
 	 		((ConfigurableApplicationContext) ctx).close();
 	}
-
 }
