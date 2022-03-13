@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="BootProj9-DataJpa-CrudRepository"/>
+<aop-project name="BootProj11-DataJpa-CrudRepository-Runners-1"/>
 </aop-reference-model>

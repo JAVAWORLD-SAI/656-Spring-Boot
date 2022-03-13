@@ -16,19 +16,21 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "CoranaVaccine_3")
-public class CoronaVaccine implements Serializable {
-
+@Table(name = "Corona_Vaccine_4")
+public class CoronaVaccine implements Serializable{
+	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	// @id it generates the primaryKey Value
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer RegNo;
-	private String Name;
-	private Double cost;
-	private String Company;
-	private Integer dose;
+	private String   FullName;
+	private String CompanyName;
+	private Integer Dose;
+	private Double Cost;
 
 }

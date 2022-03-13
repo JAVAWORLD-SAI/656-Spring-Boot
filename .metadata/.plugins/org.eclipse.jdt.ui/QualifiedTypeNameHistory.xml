@@ -57,7 +57,7 @@
     <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
     <fullyQualifiedTypeName name="com.example.service.implementation.CoronaVaccinManagmentService"/>
     <fullyQualifiedTypeName name="com.example.service.ICoronaVaccineManagementService"/>
+    <fullyQualifiedTypeName name="com.example.Entity.CoronaVaccine"/>
     <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
     <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
-    <fullyQualifiedTypeName name="com.example.Entity.CoronaVaccine"/>
 </qualifiedTypeNameHistroy>

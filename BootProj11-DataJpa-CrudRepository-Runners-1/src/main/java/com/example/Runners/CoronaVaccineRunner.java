@@ -19,7 +19,7 @@ public class CoronaVaccineRunner implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		try {
 			// here are using arrays.aslist. same functioning happens  list.of, map.of, set.of
-				Iterable<CoronaVaccine> listofVaccines=service.RegistrationBatch(Arrays.asList(new CoronaVaccine(101, "Saichand", 96.6, "Giop", 1),
+				Iterable<CoronaVaccine> listofVaccines=service.RegistrationBatch(Arrays.asList(
 																					new CoronaVaccine(102, "chand", 3696.6, "klou", 2),
 																					new CoronaVaccine(103, "Snd", 893896.6, "juoip", 5)));
 					
