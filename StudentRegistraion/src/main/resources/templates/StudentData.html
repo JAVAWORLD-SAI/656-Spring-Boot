@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>WELCOME TO STUDENT DATA PAGE</h3>
+
+<table border="1">
+	<tr>
+		<th>ID</th>
+		<th>NAME</th>
+		<th>GEN</th>
+		<th>FEE</th>
+		<th>COURSE</th>
+		<th>SLOTS</th>
+		<th>ADDRESS</th>
+		<th colspan="2">OPERATION</th>
+	</tr>
+	<tr th:each="ob:${list}">
+		<td th:text="${ob.stdId}"></td>
+		<td th:text="${ob.stdName}"></td>
+		<td th:text="${ob.stdGen}"></td>
+		<td th:text="${ob.stdFee}"></td>
+		<td th:text="${ob.stdCourse}"></td>
+		<td th:text="${ob.stdSlot}"></td>
+		<td th:text="${ob.stdAddr}"></td>
+		<td>
+			<a th:href="@{/student/edit?id={val}(val=${ob.stdId})}">EDIT</a>
+			<a th:href="@{/student/delete?id={val}(val=${ob.stdId})}">DELETE</a>
+		</td>
+	</tr>
+</table>
+<span th:text="${message}"></span>
+</body>
+</html>

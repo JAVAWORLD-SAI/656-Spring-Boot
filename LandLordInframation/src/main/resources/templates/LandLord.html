@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>WELCOME TO LANDLORD REGISTER PAGE</h3>
+<form action="save" method="post">
+<pre>
+NAME           :<input type="text" name="name"/> </br></br>
+email          : <input type="email" name="email"/> </br></br>
+gender          : <input type="radio" name="gender" value="Male" /> male <input type="radio" name="gender" value="Female" />Female  </br></br>
+AccountNumber  : <input type="number" name="AccountNumber"/> </br></br>
+Ifsccode        :  <input type="number" name="Ifsccode"/></br></br>
+RestAmout     : <input type="number" name="RestAmout"/></br></br>
+LandlordNumber :<input type="number" name="LandlordNumber"/></br></br>
+Payrent       :<input type="number" name="Payrent"/></br></br>
+Address:<textarea rows="2" cols="15" name="eddr"></textarea> </br></br>
+<button>Submit</button>
+</pre>
+</form>
+<span th:text="${Message}"></span>
+</body>
+</html>

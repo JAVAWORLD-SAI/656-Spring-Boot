@@ -1,0 +1,30 @@
+<html xmlns:th="https://www.thymeleaf.org/">
+
+    <head>
+        <title>Address Registration</title>
+    </head>
+    <body>
+        <form th:action="@{/address/save}" method="POST" th:object="${Address}">
+        <h1>Add New Address</h1>
+        <pre>
+       Use My location : <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38407.71595171415!2d77.67495361234539!3d12.94951637254864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13b4551d0957%3A0x597894d77e1e4919!2sMarathahalli%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1656564513749!5m2!1sen!2sin" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <br/> <br/>
+        Name        : <input type="text"  th:field="*{Name}" required /> <br/> 
+        PhoneNumber : <input type="number" th:field="*{phoNumber}"required/> <br/>
+        pincode     : <input type="number" th:field="*{pincode}"required/> <br/>
+        Address     : <textarea rows="1" cols="15" th:field="*{Address}"></textarea> <br/>
+        Landmark    :<input type="text" placeholder="LandMark(Optional)" th:field="*{landmark}"/> <br/>
+        State       : <select th:field="*{state}">
+        	<option value="">-SELECT-</option>
+            <option value="Andhra pradesh">Andhra pradesh</option>
+            <option value="madhya pradesh">madhya pradesh</option>
+            <option value="telangana">telangana </option>
+            <option value="tamilnadu">tamilnadu </option>
+</select> <br/>  
+        Addess Type: <input type="radio"  value="Home" th:field="*{AddressType}"/> Home <input type="radio"  value="Work" th:field="*{AddressType}"/> Work 
+	
+    <input type="submit" value="Save"/>  <input type="submit" value="Cancle"/>
+</pre>
+</form>
+<span th:text="${Message}"></span>
+    </body>
+</html>

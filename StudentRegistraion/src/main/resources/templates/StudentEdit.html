@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>WELCOME TO STUDENT EDIT PAGE</h3>
+<form th:action="@{/student/update}" 
+	method="POST" th:object="${student}">
+<pre>
+ID    : <input type="text" th:field="*{stdId}" readonly="readonly">
+NAME  : <input type="text" th:field="*{stdName}"/>
+GENDER: 
+	<input type="radio" th:field="*{stdGen}" value="Male"/> Male
+	<input type="radio" th:field="*{stdGen}" value="female"/> female
+FEE  : <input type="text" th:field="*{stdFee}"/>
+COURSE: <select th:field="*{stdCourse}">
+			<option value="">-SELECT-</option>
+			<option value="CORE">CORE</option>
+			<option value="ADV">ADV</option>
+			<option value="SPRING">SPRING</option>
+			<option value="BOOTMS">BOOTMS</option>
+		</select>	
+SLOT :
+	<input type="checkbox" th:field="*{stdSlot}" value="7AM"> 7AM 		
+	<input type="checkbox" th:field="*{stdSlot}" value="9AM"> 9AM 		
+	<input type="checkbox" th:field="*{stdSlot}" value="11AM"> 11AM 		
+	<input type="checkbox" th:field="*{stdSlot}" value="4PM"> 4PM 		
+	<input type="checkbox" th:field="*{stdSlot}" value="6PM"> 6PM 		
+	<input type="checkbox" th:field="*{stdSlot}" value="8PM"> 8PM
+	
+ADDRSS:	<textarea th:field="*{stdAddr}"></textarea>
+	<input type="submit" value="Update Student"/> 		
+</pre>	
+</form>
+</body>
+</html>
