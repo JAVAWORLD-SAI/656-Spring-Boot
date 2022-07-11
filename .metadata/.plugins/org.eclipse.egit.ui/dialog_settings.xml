@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="CommitDialog.authorValues">
+		<item value="JAVAWORLD-SAI &lt;saichand1997.s5@gmail.com.com&gt;"/>
 		<item value="JAVAWORLD-SAI &lt;saichand1997.s5@gmail.com&gt;"/>
 		<item value="Thokala saichand &lt;Thokala saichand@DESKTOP-737TGIQ&gt;"/>
 	</list>
 	<list key="CommitDialog.committerValues">
+		<item value="JAVAWORLD-SAI &lt;saichand1997.s5@gmail.com.com&gt;"/>
 		<item value="JAVAWORLD-SAI &lt;saichand1997.s5@gmail.com&gt;"/>
 		<item value="Thokala saichand &lt;Thokala saichand@DESKTOP-737TGIQ&gt;"/>
 	</list>
@@ -12,6 +14,9 @@
 		<item value="git.eclipse.org"/>
 		<item value="github.com"/>
 		<item value="bitbucket.org"/>
+	</list>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="git@github.com:JAVAWORLD-SAI/656-Spring-Boot.git"/>
 	</list>
 	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
 		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>

@@ -23,6 +23,7 @@ public class CoronaVaccineRunner implements CommandLineRunner {
 		} catch (DataAccessException dae) {
 			dae.printStackTrace();
 		}
+		/*
 		System.out.println("//////////////////////////////////////");
 		try {
 		Iterable<CoronaVaccine> listofvaccine=service.registerBatch(List.of(new CoronaVaccine(1,"SAICHAND", 7000.5,"BARATH_TECH",2),
@@ -36,6 +37,7 @@ public class CoronaVaccineRunner implements CommandLineRunner {
 		catch (DataAccessException dae) {
 			dae.printStackTrace();
 		}
+		*/
 	
 
 	}

@@ -1,4 +1,4 @@
-package com.example.Service;
+ package com.example.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,7 +12,7 @@ public class CoronaVaccineImple implements CoronaVaccineMgmt {
 	private CoronaVaccineRepo repo;
 
 	@Override
-	public String registerVaccine(CoronaVaccine vaccine) {
+	public String registerVaccine(CoronaVaccine vaccine) {                                                       
 		CoronaVaccine savedVaccine= null;
 		if(vaccine!=null)
 		savedVaccine=repo.save(vaccine);
